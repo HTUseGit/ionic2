@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button color="light" icon-only>
+        <ion-icon name="mic-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>直播</ion-title>
+    <ion-buttons end>
+      <button style="margin-left:10px;" ion-button color="light" icon-only (click)="HomeSearch()">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <!--  第一部分--轮播  -->
+  <div>
+    <ion-slides #slider pager="true"
+                loop="true"
+                autoplay="3000">
+      <ion-slide>
+        <img src="assets/images/live/live_lunbo.png" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/images/live/live_lunbo.png" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/images/live/live_lunbo.png" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/images/live/live_lunbo.png" alt="">
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <!--  第二部分--4个小圆  -->
+  <div class="flex-four-content">
+    <div class="flex-four">
+      <img src="assets/images/live/live_T_01.png" alt="">
+    </div>
+    <div class="flex-four">
+      <img src="assets/images/live/live_t_02.png" alt="">
+    </div>
+    <div class="flex-four"> <img src="assets/images/live/live_t_03.png" alt=""></div>
+    <div class="flex-four"> <img src="assets/images/live/live_t_04.png" alt=""></div>
+  </div>
+
+  <div class="line"></div>
+  <!--第三部分--直播  -->
+  <div class="liveThree">
+    <ion-list>
+      <ion-list-header>
+        <img src="{{LiveDataHeader.headerImgSrc}}" alt="" style="width: 20px">
+        <span style="font-size: 1.8rem;font-weight: bold;margin-left: 8px">{{LiveDataHeader.headerSpan}}</span>
+      </ion-list-header>
+      <ion-row style="margin-top: 10px" *ngFor="let dataRow of LiveDataRow">
+        <ion-col *ngFor="let dataCol of dataRow.row_col">
+          <img src="{{dataCol.rowImgSrc}}" alt="" (click)="getLiveDetailsPage(dataCol)">
+          <p class="liveZBTitle">{{dataCol.rowP_title}}</p>
+          <p class="liveZBSubTitle">{{dataCol.rowP_subTitle}}</p>
+          <p class="liveType">{{dataCol.rowP_Type}}</p>
+          <button style="margin-left: -18px" ion-button clear  icon-left>
+            <ion-icon name='{{dataCol.IconName_right}}'></ion-icon>
+          </button>
+          <button style="margin-left: 48px;" ion-button clear small  icon-left>
+            <ion-icon name='{{dataCol.IconName_left}}'></ion-icon>
+            {{dataCol.PeopleNumber}}
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+  </div>
+  <button (click)="Screenshot()">双 击</button>
+</ion-content>

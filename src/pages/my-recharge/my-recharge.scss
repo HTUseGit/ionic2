@@ -1,0 +1,14 @@
+page-my-recharge {
+  .PayImmediately{
+    background: #EF9C4C !important;
+  }
+  ion-col{
+    text-align: center;
+  }
+  ion-col>div{
+    background: white;
+    height: 36px;
+    line-height:38px;
+    border-radius: 5px;
+  }
+}

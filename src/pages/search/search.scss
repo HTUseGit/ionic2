@@ -1,0 +1,30 @@
+page-search {
+  //input{
+  //  outline: none;
+  //  border: none;
+  //  border-bottom: 1px solid white;
+  //  width: 90%;
+  //  padding-left: 18px;
+  //  height: 32px;
+  //  margin-left: 10px;
+  //  background: #4B6C8D;
+  //}
+  .toolbar .searchbar-ios .searchbar-input {
+    background-color: #4B6C8D;
+  }
+  .searchbar-ios .searchbar-input {
+    padding: 0 28px;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+    border-radius:0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+  }
+  .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+    color: white;
+    background-color: transparent;
+  }
+}

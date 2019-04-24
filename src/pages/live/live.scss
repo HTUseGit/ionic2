@@ -1,0 +1,46 @@
+page-live {
+  //ion-navbar{
+  //  margin-top: -1px;
+  //}
+  //第二部分
+  .flex-four-content{
+    display: flex;
+  }
+  .flex-four{
+    flex: 1;
+    text-align: center;
+  }
+  .flex-four>img{
+    padding: 0 12px;
+  }
+  ion-row ion-col{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+
+  .line{
+    width:100%;
+    height:10px;
+    background:#E5E6E8;
+  }
+  .liveThree ion-list ion-list-header{
+    border: none !important;
+  }
+  .liveZBTitle{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    color: #F9A14A;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  .liveZBSubTitle{
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .liveType{
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,32 @@
+page-my-set {
+  .toggle-ios .toggle-checked,.toggle-md .toggle-checked{
+    background: #EF9C4C !important;
+  }
+  .line{
+    width:100%;
+    height:10px;
+  }
+  .ContentBg{
+    background: #E5E6E8;
+  }
+  .ListBg{
+    background: white;
+  }
+  .list-ios{
+    margin: 0  !important;
+  }
+  .line_2{
+    width:100%;
+    height:10px;
+    background: #E5E6E8;
+  }
+  .toast-wrapper{
+    background: #488aff !important;
+
+  }
+  .toast-ios .toast-message{
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}
+

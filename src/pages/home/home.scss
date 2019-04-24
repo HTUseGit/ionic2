@@ -1,0 +1,86 @@
+page-home {
+
+  //ion-navbar{
+  //  margin-top: -1px;
+  //}
+  //第一部分
+  .two_icon{
+    position: relative;
+  }
+  .two_icon>div{
+    border:none !important;
+  }
+
+  //第二部分
+  .content_two>ion-row>ion-col{
+    padding: 14px 18px 0 18px;
+    text-align:center;
+  }
+  .content_two>ion-row:first-child>ion-col:nth-child(even)>span{
+    color:#4B6C8D;
+  }
+  .content_two>ion-row:first-child>ion-col:nth-child(odd)>span{
+    color:#F9A14A;
+  }
+  .content_two>ion-row:last-child>ion-col:nth-child(even)>span{
+    color:#4B6C8D;
+  }
+  .content_two>ion-row:last-child>ion-col:nth-child(odd)>span{
+    color:#F9A14A;
+  }
+  .line{
+    width:100%;
+    height:10px;
+    background:#E5E6E8;
+  }
+  //第三部分
+  .ThreeListHeader img{
+    width: 11px;
+  }
+  .ThreeListHeader span:nth-child(2){
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  .ThreeListHeader span:last-child{
+    font-size: 14px;
+    margin-left:250px;
+    color: #666666;
+  }
+  .item-ios ion-thumbnail{
+    width: 40%;
+  }
+  .item-ios ion-thumbnail img{
+    width: 100%;
+    height: 20%;
+  }
+
+
+  #telephone{
+    width: 100%;
+    height: 90px;
+  }
+  #QQShare{
+    margin-bottom: 10px;
+  }
+  #telephone>input,#QQShare>input{
+    width: calc(60% - 10px );
+    height: calc(40px - 3px);
+    outline: none;
+    border:1px solid black;
+    padding-left: 10px;
+    margin-left: 4%;
+  }
+  #telephone>button,#QQShare>button{
+    width: 30%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: calc(40px - 3px);
+    background: #488aff;
+    color: white;
+    font-family: 微软雅黑;
+    font-size: 16px;
+  }
+  .JX{
+    height: 10px;
+  }
+}

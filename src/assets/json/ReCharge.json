@@ -1,0 +1,21 @@
+[
+  {
+    "id":"1",
+    "ReCharge":[
+      {"ReChargeNumber":"10羽毛"},{"ReChargeNumber":"25羽毛"},{"ReChargeNumber":"50羽毛"},{"ReChargeNumber":"80羽毛"}
+    ]
+  },
+  {
+    "id":"2",
+    "ReCharge":[
+      {"ReChargeNumber":"100羽毛"},{"ReChargeNumber":"125羽毛"},{"ReChargeNumber":"150羽毛"},{"ReChargeNumber":"180羽毛"}
+    ]
+  },
+  {
+    "id":"3",
+    "ReCharge":[
+      {"ReChargeNumber":"500羽毛"},{"ReChargeNumber":"1000羽毛"},{"ReChargeNumber":"5000羽毛"},{"ReChargeNumber":"其他数量"}
+    ]
+  }
+
+]

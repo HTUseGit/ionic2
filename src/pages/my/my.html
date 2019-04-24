@@ -1,0 +1,79 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button color="light" icon-only>
+        <ion-icon name="chatbubbles-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>我的</ion-title>
+    <ion-buttons end>
+      <button ion-button color="light" icon-only (click)="JumpPersonalInfo()">
+        <ion-icon name="create-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <!-- 第一部分--大图背景 -->
+  <ion-card style="margin: 0;width: calc(100%);border-radius: 0;box-shadow: none;position: relative">
+    <img src="assets/images/My/My_bg.png"/>
+    <div class="card-title">
+      <img style="width: 60px;border-radius: 60px;margin: 0 auto" src="{{avatarPath}}" (click)="HeaderImg()">
+      <p style="width:30px;position: absolute;top:16px;;right: 20px;" (click)="JumpQRCode()" *ngIf="QRcode">
+        <img src="assets/images/My/My_QRcode.png" alt="">
+        <span style="position: absolute;right: -12px;top: 2px;color: white;font-size: 20px;">&nbsp;&gt;</span>
+      </p>
+    </div>
+    <div class="card-content" *ngIf="!UserFlag">
+      <span (click)="JumpLogin()">登录</span>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<span (click)="JumpRegister()">注册</span>
+    </div>
+    <div class="card-content" *ngIf="UserFlag">
+      <div style="text-align: center;font-size: 18px;font-family: 微软雅黑;letter-spacing: 6px;">{{UserName}}</div>
+      <span >羽毛：0</span>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<span >飞机：0</span>
+    </div>
+  </ion-card>
+  <!-- 第二部分--四个小圆 -->
+  <div class="flex-four-content">
+    <div class="flex-four" (click)="JumpRecode()">
+      <img src="assets/images/My/My_recode.png" alt=""><br>
+      <p>观看记录</p>
+    </div>
+    <div class="flex-four" (click)="JumpManage()">
+      <img src="assets/images/My/My_manage.png" alt=""><br>
+      <p>关注管理</p>
+    </div>
+    <div class="flex-four" (click)="JumpTask()">
+      <img src="assets/images/My/My_task.png" alt=""><br>
+      <p>羽毛任务</p>
+    </div>
+    <div class="flex-four" (click)="JumpReCharge()">
+      <img src="assets/images/My/My_recharge.png" alt=""><br>
+      <p>羽毛充值</p>
+    </div>
+  </div>
+
+  <div class="line"></div>
+
+  <!--第三部分-->
+  <div>
+    <ion-list>
+      <button ion-item (click)="JumpRemind()">
+        <img style="width: 20px" src="assets/images/My/My_remind.png" item-left alt="">
+        开播提醒
+      </button>
+      <button ion-item (click)="JumpQuery()">
+        <img style="width: 20px" src="assets/images/My/My_query.png" item-left alt="">
+        票务查询
+      </button>
+      <button ion-item (click)="JumpSet()">
+        <img style="width: 20px" src="assets/images/My/My_set.png" item-left alt="">
+        选项设置
+      </button>
+    </ion-list>
+  </div>
+</ion-content>
+
+

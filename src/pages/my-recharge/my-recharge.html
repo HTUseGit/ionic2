@@ -1,0 +1,36 @@
+<!--
+  Generated template for the MyRecharge page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>羽毛充值</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background: #EDEDED">
+  <!--头部账号-->
+  <div style="background: white;height: 50px;;line-height: 50px">
+    <div>
+      <span style="font-size: 18px;margin-left: 16px">充值账号：</span><span style="color:#F9A14A;font-size: 18px;">test1</span>
+      <img style="width: 12px;margin-left: 33%" src="assets/images/My/MyRecharge/my_reCharge.png" alt=""><span style="font-size: 14px;margin-left: 7px;color: gainsboro;">给他人充值</span>
+    </div>
+  </div>
+  <!--充值区-->
+  <ion-row padding>请选择羽毛充值数量</ion-row>
+  <ion-row center  style="padding:0px 16px 12px 16px" *ngFor="let ReChargeN of ReChargeList">
+    <ion-col *ngFor="let ReChargeText of ReChargeN.ReCharge"><div (click)="SetBorder(ReChargeText.ReChargeNumber)">{{ReChargeText.ReChargeNumber}}</div></ion-col>
+  </ion-row>
+  <ion-row padding>
+    <p style="font-size: 18px">售价：<span style="font-size: 18px;color: #F9A14A">{{ReChargeNumber}}元</span><span style="font-size: 14px;">(1羽毛=1元)</span></p>
+  </ion-row>
+  <!--充值按钮-->
+  <p padding >
+    <button class="PayImmediately" ion-button block (click)="PayClick(ReChargeNumber)">立即支付</button>
+  </p>
+</ion-content>

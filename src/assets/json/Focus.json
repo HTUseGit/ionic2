@@ -1,0 +1,54 @@
+{
+  "FocusOn":[
+    {
+      "id":"1",
+      "ClickCancelFocus":false,
+      "imgSrc":"assets/images/FocusOn/liveOn-01.png",
+      "cardtitle":"今晚要开启疯狂模式",
+      "cardtitlep":"马上有人鱼线的PDD",
+      "cardtitlespan":"游戏",
+      "iconleftname":"star",
+      "iconleftcontent":"Favorite",
+      "iconrightname":"eye",
+      "iconrightcontent":"3200人"
+    },
+    {
+      "id":"2",
+      "ClickCancelFocus":false,
+      "imgSrc":"assets/images/FocusOn/liveOn-02.png",
+      "cardtitle":"谁谁谁归来拉",
+      "cardtitlep":"WHITE",
+      "cardtitlespan":"游戏",
+      "iconleftname":"star",
+      "iconleftcontent":"Favorite",
+      "iconrightname":"eye",
+      "iconrightcontent":" 5600人"
+    }
+  ],
+  "unFocus":[
+    {
+      "id":"1",
+      "ClickAddFocus":true,
+      "imgSrc":"assets/images/FocusOn/Unlive-01.png",
+      "cardtitle":"大家来一起玩",
+      "cardtitlep":"KIMI",
+      "cardtitlespan":"其他",
+      "iconleftname":"star-outline",
+      "iconleftcontent":"Favorite",
+      "iconrightname":"eye",
+      "iconrightcontent":"660人"
+    },
+    {
+      "id":"2",
+      "ClickAddFocus":true,
+      "imgSrc":"assets/images/FocusOn/Unlive-02.png",
+      "cardtitle":" 下一站：西藏",
+      "cardtitlep":"刘高",
+      "cardtitlespan":"户外",
+      "iconleftname":"star-outline",
+      "iconleftcontent":"Favorite",
+      "iconrightname":"eye",
+      "iconrightcontent":"540人"
+    }
+  ]
+}

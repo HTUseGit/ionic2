@@ -1,0 +1,196 @@
+<!--
+  Generated template for the HomeGamePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>游戏</ion-title>
+    <ion-buttons  end >
+      <button ion-button  icon-only color="light">
+        <ion-icon name="search" ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding overflow-scroll="true">
+  <section class="classification">
+    <ion-item>
+      <ion-row>
+        <ion-col col-4  align-self-center >
+          <button ion-button >地区分类</button>
+        </ion-col>
+        <ion-col col-8  align-self-center >
+          <ion-row>
+            <ion-col >大陆</ion-col>
+            <ion-col>欧美</ion-col>
+            <ion-col>日韩</ion-col>
+            <ion-col>香港</ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col col-4  align-self-center >
+          <button ion-button >游戏类型</button>
+        </ion-col>
+        <ion-col col-8  align-self-center >
+          <ion-row>
+            <ion-col>英雄联盟</ion-col>
+            <ion-col>炉石传说</ion-col>
+            <ion-col *ngIf="gameMore">守望先锋</ion-col>
+            <ion-col *ngIf="gameMore">王者荣耀</ion-col>
+            <ion-col *ngIf="!gameMore" (click)="gameMoreClick()" >更多</ion-col>
+            <ion-col *ngIf="gameMore" (click)="gameMoreClick()">收起</ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col col-4  align-self-center >
+          <button ion-button >主播类型</button>
+        </ion-col>
+        <ion-col col-8  align-self-center >
+          <ion-row>
+            <ion-col>颜值</ion-col>
+            <ion-col>小鲜肉</ion-col>
+            <ion-col>旅游</ion-col>
+            <ion-col>户外</ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item>
+      <ion-row>
+        <ion-col col-4  align-self-center >
+          <button ion-button >主播首字母</button>
+        </ion-col>
+        <ion-col col-8  align-self-center >
+          <ion-row>
+            <ion-col>A</ion-col>
+            <ion-col>B</ion-col>
+            <ion-col>C</ion-col>
+            <ion-col>D</ion-col>
+            <ion-col>E</ion-col>
+            <ion-col>F</ion-col>
+            <ion-col>G</ion-col>
+            <ion-col>H</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">I</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">J</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">K</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">L</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">M</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">N</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">O</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">P</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">Q</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">R</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">S</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">T</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">U</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">V</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">W</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">X</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">Y</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore">Z</ion-col>
+            <ion-col *ngIf="!AnchorFirstNameMore" (click)="AnchorFirstNameClick()">更多</ion-col>
+            <ion-col *ngIf="AnchorFirstNameMore" (click)="AnchorFirstNameClick()">收起</ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </section>
+  <div class="SpeakBtnDiv">
+    <button  padding  ion-button block color="primary" (click)="textSpeake()">使用语音读下面的文字</button>
+    <button  padding  ion-button block color="primary" (click)="textStopSpeake()">停止使用语音读文字</button>
+  </div>
+
+  <section #selectable class="selectable">
+    01
+    　　
+    　　想起前些日子跟珍妮吃饭的时候，她问了我一个问题。她说：“不知道为什么，这段时间经常想起他，想起曾经相恋时的一些经历，我觉得我应该还是放不下他。你说，我应该重新联系他吗？”
+    　　
+    　　我把碟子上那最后一只大虾放进嘴里，边吃边漫不经心地回答她，“你找他干嘛？想旧情复燃吗？”
+    　　
+    　　“我也不知道，但就是忘不了他啊，会经常翻出他的朋友圈和聊天记录看，一边看还一边傻笑。”珍妮像个小孩那样笑了笑说。
+    　　
+    　　“或许别人早就有了新生活，或者他已经不爱你了呢，那你怎么办啊？”我还没说完，珍妮就岔开了话题。
+    　　
+    　　后来才知道，她在跟我聊天的不久后便跟阿文联系上了。
+    　　
+    　　那段时间，他们还跟热恋般的情侣那样，聊天吃饭看电影。珍妮发的朋友圈，从曾经的伤春悲秋，到如今俨然处于热恋中的小女生，以为他们已经重新在一起了。
+    　　
+    　　可是，在不到一个月后，珍妮却跟我说他们俩也就能够止于朋友吧。
+    　　
+    　　再次相处之后，感觉总有些不对劲，曾经的他喜欢吃水煮牛肉，可没想到现在的他却不吃辣了很久；曾经的他很喜欢看文艺片听粤语歌，但如今的他却转战看武打片。
+    　　
+    　　而且，阿文说话的方式和为人处世也成熟了许多。对于珍妮来说，好像那个叫“念旧”的气球突然间就被打破了，余下的只不过是陌生的现实。
+    　　
+    　　当她跟我倾诉完之后，我只想告诉她，你所怀念的不过是过去的他罢了。这只不过是你在念旧，怀念你们过去的甜蜜，并且还认为自己爱着对方。而且，你没想过的是即使能够重新在一起，也无法一切如旧了。
+    　　
+    　　因为改变了的人，无论再努力也是无法恢复原状的。
+    　　
+    　　02
+    　　
+    　　的确，旧的东西都有着一份特殊的气息，曾经的那段经历经过岁月的沉淀，总带着一些神秘感。
+    　　
+    　　但你真的想过吗？
+    　　
+    　　它之所以有神秘感，其根本的原因是你不能再次拥有，所谓得不到的东西总是让人无限记挂的。而它的价值也仅仅在于神秘感而已，过去就是过去，即使你有叮当猫，也无法一切如旧。
+    　　
+    　　其实，好像除了爱情，在友情里多的也是过客，甚至比爱情还来得更加的情断义绝，更加的令人心寒。
+    　　
+    　　其实你有没有想过，那些早已远离你新生活里的人，并没有什么具体离开的理由。就算表面上有，也很可能只是心已经离开的结果，事后才编造出的借口而已。
+    　　
+    　　珍妮的感觉我也曾经经历过，因为念旧而再去打扰那位旧人。但是我儿时的好友，至今已经认识了十余年，后来因为一些误会逐渐断绝了联系。也就在前些天因为过年特别想她，便在微信里想了解一些她的近况。
+    　　
+    　　其实，与其说是嘘寒问暖，但打心底里还在幻想着，我们的友情是否能够一切如旧？
+    　　
+    　　然而，现实总是赤裸裸的残酷。在那些伶仃的三两句问候当中，“这段时间还好吗？”“还是以前的那份工作吗？”……
+    　　
+    　　没想到言语间，都是陌生的气息，心里泛起的那份失望和旧梦好像一瞬间都破灭。
+    　　
+    　　是的，即使你多怀念曾经的那段光阴，可时间仍旧推着每个人向前走，走到那个陌生的地带。与此同时，时间和新的阅历还会将你们俩的距离越拉越远，剩下的，或许也就是那两句简单的问候罢了。
+    　　
+    　　所以倒不如还是别联系了吧，不如把那份美好的念想，留在回忆里。
+    　　
+    　　03
+    　　
+    　　所以亲爱的，并不是所有回忆里的人，都是能够再次见面的。
+    　　
+    　　因为有些人不见面还好，但一旦见面了，曾经的那些感觉被现实打得落花流水。在那段分开的日子里，对方早已经不是曾经在你身边的那个人了。取而代之的可能是更好的他，也可能是更坏的他。
+    　　
+    　　但是无论如何，都跟当初的你们并不相同了。
+    　　
+    　　时间或许就是个好东西，但很多时候我都觉得，它也很残酷，将曾经的那些刻骨铭心的亲密硬生生地拉开，直到我们都见不到对方。
+    　　
+    　　有人说，念旧不过是对曾经那份经历的一种尊重；有人说，拼命地怀念过去，也不过是因为对当下生活有诸多的不满意，所以想逃避未来；也有人说，念旧是因为，曾经那些没有珍惜过的东西，想要重新拥有。
+    　　
+    　　可是无论你是因为哪一种原因而怀念过去，但一切还是成为了过去。
+    　　
+    　　你要做的，只不过是将这些回忆密封好，藏在心底里的最深处，你可以怀念它。但一定要记得，无论对过去多么的怀念，仍旧要朝着未来努力前进啊。
+    　　
+    　　别用那些不可能回到的过去，牵绊着那个可以改变的未来。
+    　　
+    　　04
+    　　
+    　　有时候，生活就像一盒巧克力，下一块的口味永远新鲜。
+    　　
+    　　但你却总是站在回忆的窗口里，不肯离去，你以为只要继续逗留，那个活在回忆里的人便会再次出现。可结果往往是，不会的！
+    　　
+    　　念旧的人最容易受伤，喜欢拿余生来等一句别来无恙。
+    　　
+    　　但无论如何，你可以念旧，但别盼望一切如旧。如今，我有了新的爱情，也有了新的朋友，我不知道那些在我回忆里的人，如今还过得好吗？
+    　　
+    　　但那份无法回到的过去，永藏我们心中。
+    　　
+    　　我怀念你，但我更期待我的未来。
+  </section>
+</ion-content>

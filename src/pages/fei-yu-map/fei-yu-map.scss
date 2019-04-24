@@ -1,0 +1,64 @@
+page-fei-yu-map {
+  .map_container{
+    width: 100%;
+    height: 100%;
+  }
+  .amap-logo{
+    display: none;
+  }
+  .amap-scalecontrol{
+    display: none;
+  }
+  .amap-toolbar{
+    display:none;
+  }
+  .amap-copyright{
+    display: none !important;
+  }
+  .position-btn {
+    position: absolute;
+    left: 5px;
+    bottom: 50px;
+    z-index: 1;
+    font-size: 22px;
+    padding: 3px 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #666;
+  }
+  .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default {
+    color: white;
+    background-color: transparent;
+  }
+
+  //弹出窗口
+  #SearchResult{
+    position:absolute;
+    z-index:5;
+    width: 100%;
+    height: 100px;
+    bottom:0;
+    background: white;
+    border-top:1px solid gainsboro;
+  }
+  .p{
+    position:absolute;
+  }
+  .placeName{
+    font-weight: bold;
+    font-size: 18px;
+    top:20px;
+    left: 10px;
+  }
+  .placeDetaile{
+    font-size: 14px;
+    top:55px;
+    left: 10px;
+  }
+  .GoImages{
+    right:15px;
+    width:50px;
+    top:-25px;
+  }
+}

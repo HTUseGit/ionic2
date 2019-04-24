@@ -1,0 +1,46 @@
+page-personal-information {
+  .PersonalContent{
+    background: #E5E6E8;
+  }
+  .ConBg{
+    background: white;
+  }
+  .ContentFirst{
+    width: 100%;
+    height: 85px;
+    line-height: 85px;
+    position: relative;
+  }
+  .ContentFirst>span{
+    margin-left: 16px;
+  }
+  .ContentFirst>img{
+    position: absolute;
+    right: 25px;
+    top:50%;
+    margin-top: -25px;
+  }
+  .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+    padding-right: 12px !important;
+    background-position: right 2px center !important;
+  }
+  .item-ios{
+    padding-left: 0 !important;
+  }
+  .line{
+    width:100%;
+    height:10px;
+  }
+  .PesonalPadding{
+    padding: 0 16px 0 16px !important;
+  }
+  .list-ios{
+    margin: 0  !important;
+  }
+  .list-ios > .item-block:first-child{
+    border-top:none !important;
+  }
+  .list-ios > .item-block:last-child{
+    border-bottom: none !important;
+  }
+}

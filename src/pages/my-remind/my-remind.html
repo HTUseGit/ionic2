@@ -1,0 +1,63 @@
+<!--
+  Generated template for the MyRemind page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>开播提醒</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label style="font-size: 2rem">接受消息推送</ion-label>
+      <ion-toggle checked="{{mainCheckState}}" (ionChange)="mainChecked()"></ion-toggle>
+    </ion-list-header>
+    <ion-item>
+        <ion-avatar item-left>
+          <img src="assets/images/My/MyRemind/myRemind_01.png">
+        </ion-avatar>
+        <ion-label>
+          <p>WHITE五五开直播</p>
+          <p><ion-icon name="game-controller-a-outline"></ion-icon>&nbsp;&nbsp;游戏</p>
+        </ion-label>
+        <ion-toggle  checked="{{FiveCheckState}}" (ionChange)="FiveCheck($event)"></ion-toggle>
+      </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+          <img src="assets/images/My/MyRemind/myRemind_02.png">
+        </ion-avatar>
+        <ion-label>
+          <p>PDD直播</p>
+          <p><ion-icon name="game-controller-a-outline"></ion-icon>&nbsp;&nbsp;游戏</p>
+        </ion-label>
+        <ion-toggle checked="{{PCheckState}}" (ionChange)="PCheck($event)"></ion-toggle>
+      </ion-item>
+    <ion-item disabled >
+      <ion-avatar item-left>
+        <img src="assets/images/My/MyRemind/myRemind_03.png">
+      </ion-avatar>
+      <ion-label>
+        <p>三三久户外直播</p>
+        <p><ion-icon name="game-controller-a-outline"></ion-icon>&nbsp;&nbsp;户外</p>
+      </ion-label>
+      <ion-toggle  checked="{{ThreeCheckState}}" (ionChange)="ThreeCheck($event)"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/images/My/MyRemind/myRemind_04.png">
+      </ion-avatar>
+      <ion-label>
+        <p>LOL官方直播</p>
+        <p><ion-icon name="game-controller-a-outline"></ion-icon>&nbsp;&nbsp;游戏</p>
+      </ion-label>
+      <ion-toggle   checked="{{LOLCheckState}}" (ionChange)="LOLCheck($event)"></ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-content>

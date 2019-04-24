@@ -1,0 +1,75 @@
+{
+  "header":{"headerImgSrc": "assets/images/live/live_icon.png", "headerSpan"  : "正在直播"},
+  "row"   : [
+    {"row_col": [{
+      "rowImgSrc" : "assets/images/live/live_three_01.png",
+      "rowP_title"    : "今晚上王者",
+      "rowP_subTitle"    : "PDD",
+      "rowP_Type"    : "游戏",
+      "IconName_right"   : "star-outline",
+      "IconName_left" :  "eye",
+      "PeopleNumber" : "21800人"
+  }, {
+      "rowImgSrc" : "assets/images/live/live_three_02.png",
+      "rowP_title"    : "战神归来",
+      "rowP_subTitle"    : "WHITE",
+      "rowP_Type"    : "游戏",
+      "IconName_right"   : "star-outline",
+      "IconName_left" :  "eye",
+      "PeopleNumber" : "21800人"
+    }]},
+    {"row_col":[ {
+      "rowImgSrc" : "assets/images/live/live_three_03.png",
+      "rowP_title"    : "跟我一起感受大自然！",
+      "rowP_subTitle"    : "JAMES",
+      "rowP_Type"    : "户外",
+      "IconName_right"   : "star-outline",
+      "IconName_left" :  "eye",
+      "PeopleNumber" : "21800人"
+    }, {
+        "rowImgSrc" : "assets/images/live/live_three_04.png",
+        "rowP_title"    : "异形大战僵尸",
+        "rowP_subTitle"    : "秋日、",
+        "rowP_Type"    : "游戏",
+        "IconName_right"   : "star-outline",
+        "IconName_left" :  "eye",
+        "PeopleNumber" : "21800人"
+      }]},
+    {"row_col":[{
+      "rowImgSrc" : "assets/images/live/live_three_05.png",
+      "rowP_title"    : "海边垂钓，别有一番风味",
+      "rowP_subTitle"    : "三三久",
+      "rowP_Type"    : "户外",
+      "IconName_right"   : "star-outline",
+      "IconName_left" :  "eye",
+      "PeopleNumber" : "21800人"
+    }, {
+        "rowImgSrc" : "assets/images/live/live_three_06.png",
+        "rowP_title"    : "减肥、减肥、减肥！",
+        "rowP_subTitle"    : "大小姐阿怡",
+        "rowP_Type"    : "颜值",
+        "IconName_right"   : "star-outline",
+        "IconName_left" :  "eye",
+        "PeopleNumber" : "21800人"
+      }]},
+    {"row_col":[{
+      "rowImgSrc" : "assets/images/live/live_three_07.png",
+      "rowP_title"    : "啦啦啦，我来了……",
+      "rowP_subTitle"    : "张琪格",
+      "rowP_Type"    : "全民星秀",
+      "IconName_right"   : "star-outline",
+      "IconName_left" :  "eye",
+      "PeopleNumber" : "21800人"
+    }, {
+        "rowImgSrc" : "assets/images/live/live_three_08.png",
+        "rowP_title"    : "朗悦招商会",
+        "rowP_subTitle"    : "雨菲",
+        "rowP_Type"    : "其他",
+        "IconName_right"   : "star-outline",
+        "IconName_left" :  "eye",
+        "PeopleNumber" : "21800人"
+      }]}
+  ]
+}
+
+

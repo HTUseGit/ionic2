@@ -1,0 +1,51 @@
+page-my {
+  //ion-navbar{
+  //  margin-top: -1px;
+  //}
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 30%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+  .card-content{
+    position: absolute;
+
+    width: 100%;
+    top: 70%;
+    color: white;
+    text-align: center;
+  }
+  //第二部分
+  .flex-four-content{
+    display: flex;
+  }
+  .flex-four{
+    flex: 1;
+    text-align: center;
+  }
+  .flex-four>img{
+    padding: 15px 15px 5px;
+  }
+  .line{
+    width:100%;
+    height:10px;
+    background:#E5E6E8;
+    margin-top: 10px;
+  }
+}

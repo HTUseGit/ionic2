@@ -1,0 +1,14 @@
+{
+  "name": "YuFei",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+      "path": "/web",
+      "proxyUrl": "http://www.baidu.com"
+    }
+  ]
+}

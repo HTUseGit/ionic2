@@ -1,0 +1,28 @@
+page-welcome {
+
+  .swiper-slide img{
+    margin-top:4px;
+  }
+
+  //.swiper-pagination-fraction, .swiper-pagination-custom,
+  //.swiper-container-horizontal > .swiper-pagination-bullets{
+  //  top:-60px;
+  //}
+  #LJgo{
+    width: 100%;
+    position: absolute;
+    bottom:50px;
+    color: #007aff;
+    text-align: center;
+    font-size: 16px;
+  }
+  #LJgo span{
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    letter-spacing: 3px;
+    border:1px solid #007aff;
+    border-radius: 2px;
+  }
+}
